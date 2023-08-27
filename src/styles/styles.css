@@ -1,0 +1,81 @@
+.header {
+  width: 100%;
+  height: fit-content;
+  padding: 20px 0;
+  background: green;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.chat-box {
+  margin: 40px auto;
+  width: 80%;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 0;
+  border: 3px solid green;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.chats {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.chats h4 {
+  font-weight: 600;
+}
+.chats p {
+  /* align-self: flex-end; */
+  margin-left: auto;
+  position: relative;
+  right: 15%;
+  font-weight: 0;
+}
+.chats h3 {
+  margin: 0 0 0 20px;
+}
+.chats h4 {
+  margin: 0;
+}
+.chat-form {
+  text-align: center;
+  position: sticky;
+  top: 90%;
+}
+.chat-form input {
+  overflow: hidden;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 10px 0;
+  padding-left: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.chat-form button {
+  width: fit-content;
+  padding: 10px 5px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.auth {
+  text-align: center;
+}
+.chats h4 {
+  width: 50%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.room {
+  text-align: center;
+}
+.sign-out {
+  text-align: center;
+  margin-top: 30px;
+}
