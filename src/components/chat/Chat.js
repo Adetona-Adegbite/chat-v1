@@ -55,19 +55,21 @@ export default function Chat(props) {
               <h3>{message.user}</h3>
               <h4>{message.text}</h4>
               <p>
-                {message.createdAt.toDate().toLocaleTimeString().toString()}
+                {/* {message.createdAt.toDate().toLocaleTimeString().toString()} */}
               </p>
             </div>
           );
         })}
       </div>
-      <form className="chat-form" onSubmit={submitHandler}>
+      <form className="chat-form">
         <input
           placeholder="Send a Message"
           onChange={(e) => setNewMessage(e.target.value)}
           value={newMessage}
         />
-        <button type="submit">Send</button>
+        <button onClick={submitHandler} type="button">
+          Send
+        </button>
       </form>
     </div>
   );
